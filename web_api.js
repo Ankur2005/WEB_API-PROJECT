@@ -49,9 +49,11 @@ const x = document.querySelector('#name');
                 console.log(data);
                 span.innerText += data.length;
                 data.forEach(ele => {
-                    let btn = document.createElement("button");
+                    let btn = document.createElement("a");
                     btn.innerText = ele.name;
                     btn.className = 'btn';
+                    btn.setAttribute("href",ele.html_url)
+                    btn.target = '_blank';
                     repos.append(btn);
                 })
             }
