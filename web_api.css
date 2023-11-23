@@ -68,5 +68,6 @@ input[type=button]:hover {
     background-color: orange;
     padding: 4px;
     color: #fff;
-
+    text-decoration: none;
+    border:1px solid black;
 }
